@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'pry'
+
+$LOAD_PATH.unshift(File.expand_path('../lib', __dir__))
+
+def load_files
+  Dir[File.join(__dir__, '../lib/**/*.rb')].each { |file| load file }
+end
+
+load_files
+
+Pry::Commands.create_command 'reload!' do
+  description 'Reload all files in the lib directory'
+
+  def process
+    load_files
+    output.puts 'Files reloaded!'
+  end
+end
+
+Pry.start

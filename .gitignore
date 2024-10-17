@@ -1,0 +1,58 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Ignore distribution files
+dist/
+build/
+*.egg-info/
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Ruby specific files
+*.gem
+*.rbc
+.ruby-gemset
+
+# Ignore log files and temp files
+log/
+tmp/
+*.log
+*.tmp
+
+# Ignore documentation files
+.yardoc/
+.rdoc/
+
+# Ignore coverage files
+coverage/
+coverage.json
+
+# Ignore bundler config
+/.bundle
+
+# Ignore gems
+/vendor/bundle
+
+# Ignore byebug command history file
+.byebug_history
+
+# Ignore installed dependencies
+/vendor/
